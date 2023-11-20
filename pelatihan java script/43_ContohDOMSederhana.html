@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DOM API Javascript</title>
+    </head>
+    <body>
+        <p class="paragraf">Persib adalah klub sepak bola Indonesia yang berbasis di Kota Bandung, Jawa Barat. Klub ini mulai berdiri pada 14 Maret 1933. Persib saat ini bermain di Liga 1 Indonesia. Julukan mereka adalah Maung Bandung dan Pangeran Biru</p>
+        <p class="paragraf">Manchester United Football Club adalah sebuah klub sepak bola profesional yang berbasis di Old Trafford, Manchester Raya, yang bermain di Liga Utama Inggris dengan gelar Liga Utama Inggris terbanyak sepanjang masa.</p>
+        <script>
+            var paragraf = document.getElementsByClassName("paragraf");
+            console.log(paragraf);
+        </script>
+        <script>
+            var paragraf = document.getElementsByClassName("paragraf");
+            setInterval(function() {
+                paragraf[0].style.color = "blue";
+                paragraf[1].style.color = "red";
+
+                setTimeout(function (){
+                    paragraf[0].style.color ="red";
+                    paragraf[1].style.color ="blue";
+                },500)
+            },1000);
+        </script>
+    </body>
+</html>
